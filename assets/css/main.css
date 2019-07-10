@@ -3048,7 +3048,6 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 50em;
-			-ms-flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3874,10 +3873,11 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-color: black;
+		background-color:black;
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		overflow: hidden;
 	}
 
 		#intro p {
@@ -3950,10 +3950,16 @@ input, select, textarea {
 			}
 		  }
 
-		  .transparent{
+		  .text-background{
+			font-family: 'Orbitron', sans-serif;
 			background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			width: 100%;
 			padding: 30px !important;
 			text-align: center;
+		  }
+		  .text-background h1{
+			  letter-spacing: .5rem;
 		  }
 
 		 .small{ 
